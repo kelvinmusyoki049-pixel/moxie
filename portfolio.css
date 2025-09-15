@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: white;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #00ff66;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #0d0d0d;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ff66;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar li a:hover {
+  color: #00ff66;
+}
+
+/* Hero Section */
+.hero {
+  padding: 100px 50px;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 18px;
+  max-width: 600px;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 80px 50px;
+  gap: 50px;
+}
+
+.about-img {
+  position: relative;
+}
+
+.about-img img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.play-btn {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  background: rgba(0, 255, 100, 0.8);
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.about-text h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00ff66;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Experience Section */
+.experience {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.exp-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.exp-box {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.exp-box:hover{
+  color: #00ff66;
+  opacity: 0.5px;
+  
+}
+
+.exp-box:active{
+  
+}
+.skills {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 8px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  border-width: 3px;
+}
+
+.circle:active-view-transition {
+transform-style: preserve-3d;
+}
+
+.circle::before {
+  content: attr(data-percent) '%';
+  position: absolute;
+  top: -30px;
+  font-size: 20px;
+  color: #00ff66;
+}
